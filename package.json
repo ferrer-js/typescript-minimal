@@ -1,0 +1,20 @@
+{
+  "name": "@baryon/typescript-minimal-node",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "Minimal skeleton for a TypeScript library or app running in Node.js",
+  "type": "module",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": ["lib"],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build:types": "tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly src/index.ts"
+  }
+}
