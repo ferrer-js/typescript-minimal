@@ -11,7 +11,6 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   root: true,
-  files: ["src/**", "tests/**"],
   rules: {
     "@typescript-eslint/no-empty-function": "off"
   }

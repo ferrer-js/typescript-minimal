@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import { HelloWorld } from "./HelloWorld.js"
+import { HelloWorld } from "./HelloWorld"
 
 export { HelloWorld }
 
@@ -10,6 +10,7 @@ export function helloWorld() {
 }
 
 export function badFunc() {
+  let unusedVar = 1
   const a = {}
   a.something = 3
 }

@@ -8,6 +8,7 @@
 !.yarn/sdks
 .pnp.*
 /node_modules
+/.parcel-cache
 
 # Build caches
 /dist

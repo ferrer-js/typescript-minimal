@@ -16,7 +16,6 @@ export class HelloWorld {
    * @returns The result of saying "Hello World"
    */
   sayIt(): string {
-    let unusedVar = 3
     return this.value
   }
 }
