@@ -12,3 +12,9 @@ A minimal set of configuration files for building a Typescript application or li
 - Transpilation via `babel` (v7)
 - Bundling via `webpack` v5, including PnP support. Configurable for bundling as a library (ignore imported modules) or as a full bundle.
 - VS Code integration for all of the above, with the help of `@yarnpkg/sdks`
+
+## Build Chains
+
+### `tsc`
+
+Standard build using the TypeScript compiler. Uses `@tsconfig/node-lts` for compiler settings.

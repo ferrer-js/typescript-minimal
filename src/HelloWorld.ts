@@ -17,7 +17,6 @@ export class HelloWorld {
    */
   sayIt(): string {
     let unusedVar = 3
-    variableThatDoesntExist = 7
     return this.value
   }
 }

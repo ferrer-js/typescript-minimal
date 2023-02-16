@@ -5,7 +5,8 @@ export { HelloWorld }
 
 export function helloWorld() {
   const world = new HelloWorld()
-  return world.sayIt()
+  const camelCased = _.camelCase(world.sayIt())
+  return camelCased
 }
 
 export function badFunc() {
