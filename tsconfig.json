@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/lib",
+    "declaration": true,
+    "declarationDir": "dist/typings",
+    "target": "ES2022",
+    "moduleResolution": "nodenext",
+    "allowJs": true,
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src",
+  ]
+}

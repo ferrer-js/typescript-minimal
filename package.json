@@ -1,20 +1,34 @@
 {
-  "name": "@baryon/typescript-minimal-node",
+  "name": "@ferrer/typescript-minimal",
   "version": "0.0.0",
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "UNLICENSED",
-  "description": "Minimal skeleton for a TypeScript library or app running in Node.js",
+  "description": "Minimal skeleton for a TypeScript library or app.",
   "type": "module",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "files": ["lib"],
+  "main": "dist/lib/index.js",
+  "typings": "dist/typings/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "yarn@3.2.2",
   "dependencies": {
-
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.2",
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "build:types": "tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly src/index.ts"
+    "clean": "rimraf lib dist coverage",
+    "check:types": "tsc",
+    "build:types": "tsc -d --declarationDir dist/typings --declarationMap --emitDeclarationOnly src/index.ts"
   }
 }

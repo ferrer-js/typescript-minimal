@@ -1,5 +1,15 @@
+# OS artifacts
 .DS_Store
 
+# Package caches
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+.pnp.*
 /node_modules
+
+# Build caches
+/dist
 /lib
 /coverage
